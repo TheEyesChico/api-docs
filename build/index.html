@@ -1,0 +1,1035 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-2d78c3dd.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-2f94b4ce.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;http&quot;,&quot;shell&quot;,&quot;python&quot;,&quot;php&quot;,&quot;java&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-f5165288.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="http">HTTP</a>
+              <a href="#" data-language-name="shell">cURL</a>
+              <a href="#" data-language-name="python">Python</a>
+              <a href="#" data-language-name="php">PHP</a>
+              <a href="#" data-language-name="java">Java</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#applicants" class="toc-h1 toc-link" data-title="Applicants">Applicants</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#about-applicants" class="toc-h2 toc-link" data-title="About applicants">About applicants</a>
+                  </li>
+                  <li>
+                    <a href="#applicant-object" class="toc-h2 toc-link" data-title="Applicant object">Applicant object</a>
+                  </li>
+                  <li>
+                    <a href="#address-object" class="toc-h2 toc-link" data-title="Address object">Address object</a>
+                  </li>
+                  <li>
+                    <a href="#forbidden-characters" class="toc-h2 toc-link" data-title="Forbidden characters">Forbidden characters</a>
+                  </li>
+                  <li>
+                    <a href="#create-applicant" class="toc-h2 toc-link" data-title="Create applicant">Create applicant</a>
+                  </li>
+                  <li>
+                    <a href="#retrieve-applicant" class="toc-h2 toc-link" data-title="Retrieve applicant">Retrieve applicant</a>
+                  </li>
+                  <li>
+                    <a href="#update-applicant" class="toc-h2 toc-link" data-title="Update applicant">Update applicant</a>
+                  </li>
+                  <li>
+                    <a href="#delete-applicant" class="toc-h2 toc-link" data-title="Delete applicant">Delete applicant</a>
+                  </li>
+                  <li>
+                    <a href="#restore-applicant" class="toc-h2 toc-link" data-title="Restore applicant">Restore applicant</a>
+                  </li>
+                  <li>
+                    <a href="#list-applicants" class="toc-h2 toc-link" data-title="List applicants">List applicants</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#documents" class="toc-h1 toc-link" data-title="Documents">Documents</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#about-documents" class="toc-h2 toc-link" data-title="About documents">About documents</a>
+                  </li>
+                  <li>
+                    <a href="#document-object" class="toc-h2 toc-link" data-title="Document object">Document object</a>
+                  </li>
+                  <li>
+                    <a href="#document-types" class="toc-h2 toc-link" data-title="Document types">Document types</a>
+                  </li>
+                  <li>
+                    <a href="#upload-document" class="toc-h2 toc-link" data-title="Upload document">Upload document</a>
+                  </li>
+                  <li>
+                    <a href="#retrieve-document" class="toc-h2 toc-link" data-title="Retrieve document">Retrieve document</a>
+                  </li>
+                  <li>
+                    <a href="#list-documents" class="toc-h2 toc-link" data-title="List documents">List documents</a>
+                  </li>
+                  <li>
+                    <a href="#download-document" class="toc-h2 toc-link" data-title="Download document">Download document</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/slatedocs/slate'>Docs Powered by Slate</a></li>
+            <li><h3 style="color:red;">Creator - Raghav Gupta</h3></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='applicants'>Applicants</h1><h2 id='about-applicants'>About applicants</h2>
+<p>An applicant represents an individual who will be the subject of <a href="#">a check</a>. An applicant must exist before a check can be initiated.</p>
+<h2 id='applicant-object'>Applicant object</h2>
+<blockquote>
+<p>An example applicant object</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">201</span> <span class="ne">Created</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+</code></pre></div>
+<blockquote>
+<h3 style="color:white;text-align:center">RESPONSE</h3>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;APPLICANT_ID&gt;"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-09T17:52:42Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doe"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JaneDoe@xyz.com"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1990-01-01"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"delete_at"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/applicants/&lt;APPLICANT_ID&gt;"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id_numbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"flat_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"building_number"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"street"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Second Street"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"town"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"S2 2DF"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GBR"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<table><thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td><strong>string</strong> <br> The unique identifier for the applicant</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td><strong>datetime</strong> <br> The date and time when this applicant was created</td>
+</tr>
+<tr>
+<td>delete_at</td>
+<td><strong>datetime</strong> <br> The date and time when this applicant is scheduled to be deleted, or <code>null</code> if the applicant is not scheduled to be deleted</td>
+</tr>
+<tr>
+<td>href</td>
+<td><strong>string</strong> <br> The URI of this resource</td>
+</tr>
+<tr>
+<td>first_name</td>
+<td><strong>string</strong> <br> The applicant’s first name</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td><strong>string</strong> <br> The applicant’s surname</td>
+</tr>
+<tr>
+<td>email</td>
+<td><strong>string</strong> <br> The applicant’s email address</td>
+</tr>
+<tr>
+<td>dob</td>
+<td><strong>date</strong> <br> The applicant’s date of birth in yyyy-mm-dd format</td>
+</tr>
+<tr>
+<td>id_numbers</td>
+<td><strong>array of id number objects</strong> <br> A collection of identification numbers belonging to this applicant</td>
+</tr>
+<tr>
+<td>address</td>
+<td><strong><a href="#address-object">address</a> object</strong> <br> The address of the applicant</td>
+</tr>
+</tbody></table>
+<h3 id='id-number'>ID NUMBER</h3>
+<table><thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td><strong>string</strong> <br> Type of ID number. Valid values are <code>ssn</code>, <code>social_insurance</code> (e.g. UK National Insurance), <code>tax_id</code>, <code>identity_card</code> and <code>driving_licence</code></td>
+</tr>
+<tr>
+<td>value</td>
+<td><strong>string</strong> <br> Value of ID number <br> Note that <code>ssn</code> supports both the full SSN or the last 4 digits. If providing the full SSN the value has to be supplied with dashes in the following format: xxx-xx-xxxx</td>
+</tr>
+<tr>
+<td>state_code</td>
+<td><strong>string</strong> <br> Two letter code of issuing state (state-issued driving licences only)</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+The API uses the spelling “driving_licence”
+</aside>
+<h2 id='address-object'>Address object</h2>
+<table><thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>flat_number</td>
+<td><strong>string</strong> <br> The flat number</td>
+</tr>
+<tr>
+<td>building_number</td>
+<td><strong>string</strong> <br> The building number</td>
+</tr>
+<tr>
+<td>building_name</td>
+<td><strong>string</strong> <br> The building name</td>
+</tr>
+<tr>
+<td>street</td>
+<td><strong>string</strong> <br> The street of the applicant’s address. There is a 32-character limit on this field for UK addresses</td>
+</tr>
+<tr>
+<td>sub_street</td>
+<td><strong>string</strong> <br> The sub-street</td>
+</tr>
+<tr>
+<td>town</td>
+<td><strong>string</strong> <br> The town</td>
+</tr>
+<tr>
+<td>state</td>
+<td><strong>string</strong> <br> The address state. US states must use the USPS abbreviation (see also <a href="https://www.iso.org/obp/ui/#iso:code:3166:US">ISO 3166-2:US</a>), for example <code>AK</code>, <code>CA</code>, or <code>TX</code>.</td>
+</tr>
+<tr>
+<td>postcode</td>
+<td><strong>string</strong> <br> The postcode or ZIP of the applicant’s address. For UK postcodes, specify the value in the following format: <code>SW4</code> <code>6EH</code></td>
+</tr>
+<tr>
+<td>country</td>
+<td><strong>string</strong> <br> The 3 character ISO country code of this address. For example, <code>GBR</code> is the country code for the United Kingdom</td>
+</tr>
+<tr>
+<td>line1</td>
+<td><strong>string</strong> <br> Line 1 of the address</td>
+</tr>
+</tbody></table>
+
+<p>The applicant address object is nested inside the address object. <br><br>
+<code>postcode</code> and <code>country</code> are required fields if an address is provided for an applicant. For US addresses, <code>state</code> is also a required field.<br><br>
+Most addresses will contain other information such as <code>flat_number</code>. Please make sure they are supplied as separate fields, and do not try and fit them all into the <code>street</code> field. Doing so is likely to affect check performance. Alternatively, you can provide addresses in the form <code>line1</code>, <code>line2</code> and <code>line3</code>.<br></p>
+<h2 id='forbidden-characters'>Forbidden characters</h2>
+<p>For addresses the following characters are forbidden:</p>
+
+<p><code>!$%^*=&lt;&gt;</code></p>
+
+<p>For names the following characters are forbidden:</p>
+
+<p><code>^!#$%*=&lt;&gt;;{}&quot;</code></p>
+<h2 id='create-applicant'>Create applicant</h2>
+<p><span class="post">POST</span><span class="url">curl https://api.xyz.com/applicants</span></p>
+
+<blockquote>
+<p>Create an applicant</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">/v3/applicants/</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.xyz.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl https://api.xyz.com/applicants
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span> 
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> 
+  <span class="nt">-d</span> <span class="s1">'{
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "dob": "1990-01-31",
+  "address": {
+    "building_number": "100",
+    "town": "London",
+    "country": "GBR"
+  }
+}'</span>
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">applicant_address</span> <span class="o">=</span> <span class="n">user</span><span class="p">.</span><span class="n">Address</span><span class="p">(</span>
+    <span class="n">building_number</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">town</span><span class="o">=</span><span class="s">'London'</span><span class="p">,</span>
+    <span class="n">country</span><span class="o">=</span><span class="s">'GBR'</span>
+<span class="p">)</span>
+
+<span class="n">applicant_details</span> <span class="o">=</span> <span class="n">user</span><span class="p">.</span><span class="n">Applicant</span><span class="p">(</span>
+    <span class="n">first_name</span><span class="o">=</span><span class="s">'Jane'</span><span class="p">,</span>
+    <span class="n">last_name</span><span class="o">=</span><span class="s">'Doe'</span><span class="p">,</span>
+    <span class="n">dob</span><span class="o">=</span><span class="s">"1990-01-31"</span><span class="p">,</span>
+    <span class="n">address</span><span class="o">=</span><span class="n">applicant_address</span>
+<span class="p">)</span>
+
+<span class="n">api_instance</span><span class="p">.</span><span class="n">create_applicant</span><span class="p">(</span><span class="n">applicant_details</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$applicantDetails</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">xyz\Model\Applicant</span><span class="p">();</span>
+
+<span class="nv">$applicantDetails</span><span class="o">-&gt;</span><span class="nf">setFirstName</span><span class="p">(</span><span class="s1">'Jane'</span><span class="p">);</span>
+<span class="nv">$applicantDetails</span><span class="o">-&gt;</span><span class="nf">setLastName</span><span class="p">(</span><span class="s1">'Doe'</span><span class="p">);</span>
+<span class="nv">$applicantDetails</span><span class="o">-&gt;</span><span class="nf">setDob</span><span class="p">(</span><span class="s1">'1990-01-31'</span><span class="p">);</span>
+
+<span class="nv">$address</span> <span class="o">=</span> <span class="k">new</span> <span class="err">\</span><span class="nf">xyz\Model\Address</span><span class="p">();</span>
+<span class="nv">$address</span><span class="o">-&gt;</span><span class="nf">setBuilding_number</span><span class="p">(</span><span class="s1">'100'</span><span class="p">);</span>
+<span class="nv">$address</span><span class="o">-&gt;</span><span class="nf">setTown</span><span class="p">(</span><span class="s1">'London'</span><span class="p">);</span>
+<span class="nv">$address</span><span class="o">-&gt;</span><span class="nf">setCountry</span><span class="p">(</span><span class="s1">'GBR'</span><span class="p">);</span>
+
+<span class="nv">$applicantDetails</span><span class="o">-&gt;</span><span class="nf">setAddress</span><span class="p">(</span><span class="nv">$address</span><span class="p">);</span>
+
+<span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">createApplicant</span><span class="p">(</span><span class="nv">$applicantDetails</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.website.xyz.models.Address</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.website.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">Address</span><span class="o">.</span><span class="na">Request</span> <span class="n">addressRequest</span> <span class="o">=</span> <span class="nc">Address</span><span class="o">.</span><span class="na">request</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">building_number</span><span class="o">(</span><span class="s">"100"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">town</span><span class="o">(</span><span class="s">"London"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">country</span><span class="o">(</span><span class="s">"GBR"</span><span class="o">);</span>
+
+<span class="nc">Applicant</span><span class="o">.</span><span class="na">Request</span> <span class="n">applicantRequest</span> <span class="o">=</span> <span class="nc">Applicant</span><span class="o">.</span><span class="na">request</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">firstName</span><span class="o">(</span><span class="s">"Jane"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">lastName</span><span class="o">(</span><span class="s">"Doe"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">dob</span><span class="o">(</span><span class="nc">LocalDate</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"1990-01-31"</span><span class="o">))</span>
+        <span class="o">.</span><span class="na">address</span><span class="o">(</span><span class="n">addressRequest</span><span class="o">);</span>
+
+<span class="nc">Applicant</span> <span class="n">applicant</span> <span class="o">=</span> <span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">applicantRequest</span><span class="o">);</span>
+</code></pre></div>
+<blockquote>
+<h3 style="color:white;text-align:center">RESPONSE</h3>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jane"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doe"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dob"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1990-01-31"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"building_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"town"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GBR"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<aside class="notice">
+Using this endpoint in a live context will cause you to send personal data to XYZ website. Always make sure you inform your users about this and obtain any necessary permissions. For more information on how we process uses personal data, view our <a href="">Privacy Policy</a>
+</aside>
+
+<p>Creates a single <a href="#about-applicants">applicant.</a> Returns an <a href="#applicant-object">applicant object</a>.
+<br><br>
+When you create an applicant, <a href="#forbidden-characters">some characters are forbidden</a>.
+<br><br>
+Required applicant data differs depending on report type. For example, for <a href="#">Document reports</a>.
+<br></p>
+<h3 id='request-body-parameters'>REQUEST BODY PARAMETERS</h3>
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>first_name</td>
+<td><strong>required</strong> <br> The applicant’s forename.</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td><strong>required</strong> <br> The applicant’s surname.</td>
+</tr>
+<tr>
+<td>email</td>
+<td><strong>required only if creating a check where</strong><br> <code>applicant_provides_data</code> is <code>true</code> <br> The applicant’s email address.</td>
+</tr>
+<tr>
+<td>dob</td>
+<td><strong>optional</strong><br> The applicant’s date of birth in yyyy-mm-dd format.</td>
+</tr>
+<tr>
+<td>id_numbers</td>
+<td><strong>optional</strong><br> A collection of identification numbers belonging to this applicant</td>
+</tr>
+<tr>
+<td>address</td>
+<td><strong>optional</strong><br> The address of the applicant</td>
+</tr>
+</tbody></table>
+<h2 id='retrieve-applicant'>Retrieve applicant</h2>
+<blockquote>
+<p>Retrieve an applicant</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/v3/applicants/&lt;APPLICANT_ID&gt;</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.website.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl https://api.xyz.com/&lt;APPLICANT_ID&gt;
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span>
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">api_instance</span><span class="p">.</span><span class="n">find_applicant</span><span class="p">(</span><span class="s">'&lt;APPLICANT_ID&gt;'</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">findApplicant</span><span class="p">(</span><span class="s1">'&lt;APPLICANT_ID&gt;'</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">String</span> <span class="n">applicantId</span> <span class="o">=</span> <span class="s">"&lt;APPLICANT_ID&gt;"</span><span class="o">;</span>
+
+<span class="nc">Applicant</span> <span class="n">applicant</span> <span class="o">=</span> <span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">applicantId</span><span class="o">);</span>
+</code></pre></div>
+<p><span class="get">GET</span><span class="url">https://api.xyz.com/applicants/{applicant_id}</span>
+<br><br>
+Retrieves a single <a href="#about-applicants">applicant</a>. Returns an <a href="#applicant-object">applicant object</a>.</p>
+<h2 id='update-applicant'>Update applicant</h2>
+<blockquote>
+<p>Update an applicant</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">PUT</span> <span class="nn">/v3/applicants/&lt;APPLICANT_ID&gt;</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.xyz.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl curl https://api.xyz.com/&lt;APPLICANT_ID&gt;/update
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span> 
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> 
+  <span class="nt">-d</span> <span class="s1">'{
+  "first_name": "New",
+  "last_name": "Name"
+}'</span> 
+  <span class="nt">-X</span> PUT
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">new_applicant_details</span> <span class="o">=</span> <span class="n">xyz</span><span class="p">.</span><span class="n">Applicant</span><span class="p">()</span>
+
+<span class="n">new_applicant_details</span><span class="p">.</span><span class="n">first_name</span> <span class="o">=</span> <span class="s">'New'</span>
+<span class="n">new_applicant_details</span><span class="p">.</span><span class="n">last_name</span> <span class="o">=</span> <span class="s">'Name'</span>
+
+<span class="n">api_instance</span><span class="p">.</span><span class="n">update_applicant</span><span class="p">(</span><span class="s">'&lt;APPLICANT_ID&gt;'</span><span class="p">,</span> <span class="n">new_applicant_details</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$newApplicantDetails</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">xyz\Model\Applicant</span><span class="p">();</span>
+<span class="nv">$newApplicantDetails</span><span class="o">-&gt;</span><span class="nf">setFirstName</span><span class="p">(</span><span class="s1">'New'</span><span class="p">);</span>
+
+<span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">updateApplicant</span><span class="p">(</span><span class="s1">'&lt;APPLICANT_ID&gt;'</span><span class="p">,</span> <span class="nv">$newApplicantDetails</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">Applicant</span><span class="o">.</span><span class="na">Request</span> <span class="n">newApplicantDetails</span> <span class="o">=</span> <span class="nc">Applicant</span><span class="o">.</span><span class="na">request</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">firstName</span><span class="o">(</span><span class="s">"New"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">lastName</span><span class="o">(</span><span class="s">"Name"</span><span class="o">);</span>
+
+<span class="nc">String</span> <span class="n">applicantId</span> <span class="o">=</span> <span class="s">"&lt;APPLICANT_ID&gt;"</span><span class="o">;</span>
+
+<span class="nc">Applicant</span> <span class="n">applicant</span> <span class="o">=</span> <span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">applicantId</span><span class="o">,</span> <span class="n">newApplicantDetails</span><span class="o">);</span>
+</code></pre></div>
+<blockquote>
+<h3 style="color:white;text-align:center;">RESPONSE</h3>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"New"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Name"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p><span class="put">PUT</span><span class="url">https://api.xyz.com/v3/applicants/{applicant_id}</span>
+<br>
+<aside class="notice">
+Using this endpoint in a live context will cause you to send personal data to XYZ website. Always make sure you inform your users about this and obtain any necessary permissions. For more information on how we use personal data, view our <a href="#">Privacy Policy</a>.
+</aside></p>
+
+<p>Updates an applicant’s information. Returns the updated <a href="#applicant-object">applicant object</a>.
+<br></p>
+
+<ul>
+<li>Partial updates</li>
+<li>Addresses and ID numbers present will replace existing ones</li>
+<li>Same applicant validations to create applicant</li>
+</ul>
+<h3 id='request-body-parameters-2'>REQUEST BODY PARAMETERS</h3>
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>first_name</td>
+<td>The applicant’s forename.</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>The applicant’s surname.</td>
+</tr>
+<tr>
+<td>email</td>
+<td>The applicant’s email address.</td>
+</tr>
+<tr>
+<td>dob</td>
+<td>The applicant’s date of birth in yyyy-mm-dd format.</td>
+</tr>
+<tr>
+<td>id_numbers</td>
+<td>A collection of identification numbers belonging to this applicant</td>
+</tr>
+<tr>
+<td>address</td>
+<td>The address of the applicant</td>
+</tr>
+</tbody></table>
+<h2 id='delete-applicant'>Delete applicant</h2>
+<blockquote>
+<p>Delete an applicant</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">DELETE</span> <span class="nn">/v3/applicants/&lt;APPLICANT_ID&gt;</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.xyz.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl curl https://api.xyz.com/&lt;APPLICANT_ID&gt;/delete
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span> 
+  <span class="nt">-X</span> DELETE
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">api_instance</span><span class="p">.</span><span class="n">destroy_applicant</span><span class="p">(</span><span class="s">'&lt;APPLICANT_ID&gt;'</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">destroyApplicant</span><span class="p">(</span><span class="s1">'&lt;APPLICANT_ID&gt;'</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">String</span> <span class="n">applicantId</span> <span class="o">=</span> <span class="s">"&lt;APPLICANT_ID&gt;"</span><span class="o">;</span>
+
+<span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="n">applicantId</span><span class="o">);</span>
+</code></pre></div>
+<p><span class="delete">DELETE</span><span class="url">https://api.xyz.com/v3/applicants/{applicant_id}</span>
+<br><br>
+Deletes a single applicant. If successful, returns a <code>204 No Content</code> response. 
+<br><br>
+Sending a deletion request adds the applicant object and all associated documents, photos, videos, checks, reports and analytics data to our deletion queue. The objects will be permanently deleted from our production object storage and relational database system, after a deletion delay which can be configured by <a href="#">emailing our client support team</a>. After deletion, applicant details cannot be recovered or queried, and we will not be able to troubleshoot. Within the delay period, the applicant can be restored. For more information about our deletion service, visit <a href="#">Data Deletion FAQ</a>.</p>
+
+<aside class="notice">
+Deleting an applicant that does not have an associated check will immediately delete the applicant and any resources.
+</aside>
+<h2 id='restore-applicant'>Restore applicant</h2>
+<blockquote>
+<p>Restore an applicant</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">POST</span> <span class="nn">/v3/applicants/&lt;APPLICANT_ID&gt;/restore</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.xyz.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl curl https://api.xyz.com/&lt;APPLICANT_ID&gt;/restore 
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span> 
+  <span class="nt">-X</span> POST
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">api_instance</span><span class="p">.</span><span class="n">restore_applicant</span><span class="p">(</span><span class="s">'&lt;APPLICANT_ID&gt;'</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">restoreApplicant</span><span class="p">(</span><span class="s1">'&lt;APPLICANT_ID&gt;'</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">String</span> <span class="n">applicantId</span> <span class="o">=</span> <span class="s">"&lt;APPLICANT_ID&gt;"</span><span class="o">;</span>
+
+<span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">restore</span><span class="o">(</span><span class="n">applicantId</span><span class="o">);</span>
+</code></pre></div>
+<p><span class="post">POST</span><span class="url">https://api.xyz.com/v3/applicants/{applicant_id}/restore</span>
+<br><br>
+Restores a single applicant scheduled for deletion. If successful, returns a <code>204 No Content</code> response.
+<br><br>
+A restore request will also restore all associated documents, photos, videos, checks, reports and analytics data.
+<br><br>
+Applicants that have been permanently deleted cannot be restored.</p>
+<h2 id='list-applicants'>List applicants</h2>
+<blockquote>
+<p>Return all applicants you’ve created</p>
+</blockquote>
+<div class="highlight"><pre class="highlight http tab-http"><code><span class="nf">GET</span> <span class="nn">/v3/applicants/</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">api.xyz.com</span>
+<span class="na">Authorization</span><span class="p">:</span> <span class="s">Token token=&lt;YOUR_API_TOKEN&gt;</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl curl https://api.xyz.com/&lt;APPLICANT_ID&gt; 
+  <span class="nt">-H</span> <span class="s1">'Authorization: Token token=&lt;YOUR_API_TOKEN&gt;'</span>
+</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="n">api_instance</span><span class="p">.</span><span class="n">list_applicants</span><span class="p">(</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">per_page</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">include_deleted</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight php tab-php"><code><span class="nv">$xyz</span><span class="o">-&gt;</span><span class="nf">listApplicants</span><span class="p">();</span>
+</code></pre></div><div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">com.xyz.models.Applicant</span><span class="o">;</span>
+
+<span class="nc">Integer</span> <span class="n">page</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="nc">Integer</span> <span class="n">perPage</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="nc">Boolean</span> <span class="n">includeDeleted</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span> 
+
+<span class="nc">List</span><span class="o">&lt;</span><span class="nc">Applicant</span><span class="o">&gt;</span> <span class="n">applicants</span> <span class="o">=</span> <span class="n">xyz</span><span class="o">.</span><span class="na">applicant</span><span class="o">.</span><span class="na">list</span><span class="o">(</span><span class="n">page</span><span class="o">,</span> <span class="n">perPage</span><span class="o">,</span> <span class="n">includeDeleted</span><span class="o">);</span>
+</code></pre></div>
+<p><span class="get">GET</span><span class="url">https://api.xyz.com/v3/applicants/</span>
+<br><br>
+Lists all applicants you’ve created, sorted by creation date in descending order.
+<br><br>
+Returns data in the form: <br> <code>{&quot;applicants&quot;: [&lt;LIST_OF_APPLICANT_OBJECTS&gt;]}.</code>
+<br><br>
+Requests to this endpoint will be paginated to 20 items by default.</p>
+<h3 id='query-string-parameters'>QUERY STRING PARAMETERS</h3>
+<p><code>include_deleted=true</code> (optional): include applicants scheduled for deletion.
+<br><br>
+<code>per_page</code> (optional): set the number of results per page. Defaults to 20.
+<br><br>
+<code>page</code> (optional): return specific pages. Defaults to 1.</p>
+<h3 id='link-header'>LINK HEADER</h3>
+<p>The <code>Link</code> header contains pagination information.<br>
+For example:
+<br><br>
+<code>Link: https://api.xyz.com/applicants?page=3059&gt;; rel=&quot;last&quot;, &lt;https://api.xyz.com/v3/applicants?page=2&gt;; rel=&quot;next&quot;</code>
+<br><br>
+Possible <code>rel</code> values are:
+<br></p>
+
+<table><thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Link relation (description)</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>next</code></td>
+<td>Next page of results</td>
+</tr>
+<tr>
+<td><code>last</code></td>
+<td>Last page of results</td>
+</tr>
+<tr>
+<td><code>first</code></td>
+<td>First page of results</td>
+</tr>
+<tr>
+<td><code>prev</code></td>
+<td>Previous page of results</td>
+</tr>
+</tbody></table>
+
+<p><br>
+The custom <code>X-Total-Count</code> header gives the total resource count.
+<br><br>
+You can read more about <code>Link</code> headers <a href="https://tools.ietf.org/html/rfc5988">on the IETF website</a>.</p>
+<h1 id='documents'>Documents</h1><h2 id='about-documents'>About documents</h2>
+<p>In the Onfido API, documents belong to a single applicant, so they must be uploaded after <a href="http://cw.sparshik.com:8006/#applicants">an applicant</a> has been created.<br><br>
+Some reports require identity documents in order to be processed successfully. For example, <a href="#">Document reports</a>.
+<aside class="notice">
+Depending on the type of the document, we may require both sides of the image to be uploaded. See the <a href="#">full list of documents we support</a>. 
+</aside></p>
+<h2 id='document-object'>Document object</h2>
+<p>The example given is for a driving licence document.</p>
+
+<table><thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td><strong>string</strong> <br> The unique identifier of the document</td>
+</tr>
+<tr>
+<td>created_at</td>
+<td><strong>datetime</strong> <br> The date and time at which the document was uploaded</td>
+</tr>
+<tr>
+<td>href</td>
+<td><strong>string</strong> <br> The URI of this resource</td>
+</tr>
+<tr>
+<td>download_href</td>
+<td><strong>string</strong> <br> The URI that can be used to download the document</td>
+</tr>
+<tr>
+<td>file_name</td>
+<td><strong>string</strong> <br> The name of the uploaded file</td>
+</tr>
+<tr>
+<td>file_type</td>
+<td><strong>string</strong> <br> The file type of the uploaded file</td>
+</tr>
+<tr>
+<td>file_size</td>
+<td><strong>integer</strong> <br> The size of the file in bytes</td>
+</tr>
+<tr>
+<td>type</td>
+<td><strong>string</strong> <br> The type of document. The possible values are detailed <a href="#">in the “Document types” section.</a></td>
+</tr>
+<tr>
+<td>side</td>
+<td><strong>string</strong> <br> The side of the document, if applicable. The possible values are <em>front</em> and <em>back</em></td>
+</tr>
+<tr>
+<td>issuing_country</td>
+<td><strong>string</strong> <br> The issuing country of the document, in 3-letter ISO code, specified when uploading it.</td>
+</tr>
+<tr>
+<td>applicant_id</td>
+<td><strong>string</strong> <br> The id of the applicant to whom the document belongs.</td>
+</tr>
+</tbody></table>
+<h2 id='document-types'>Document types</h2><h3 id='identity-documents'>IDENTITY DOCUMENTS</h3>
+<p>The following is a non-exhaustive list of document types as they’re described in the Onfido API:</p>
+
+<table><thead>
+<tr>
+<th><strong>Type</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>national_identity_card</code></td>
+</tr>
+<tr>
+<td><code>driving_licence</code></td>
+</tr>
+<tr>
+<td><code>passport</code></td>
+</tr>
+<tr>
+<td><code>voter_id</code></td>
+</tr>
+<tr>
+<td><code>work_permit</code></td>
+</tr>
+</tbody></table>
+
+<p>For some document types, both sides are required for processing.
+<br>
+<aside class="notice">
+For some document types, both sides are required for processing. You can review a <a href="#">full list of documents we support.</a>
+</aside></p>
+
+<p>If you’re unsure of the type of document you want to verify, you can submit documents with type <code>unknown.</code> In this case, we will attempt to classify and recognize the document type when processing a Document report.</p>
+<h2 id='upload-document'>Upload document</h2>
+<p><span class="get">GET</span><span class="url">https://api.onfido.com/v3/documents/</span><br>
+<aside class="notice">
+Using this endpoint in a live context will cause you to send personal data to Onfido. Always make sure you inform your users about this and obtain any necessary permissions. For more information on how Onfido uses personal data, view our <a href="#">Privacy Policy.</a>
+</aside></p>
+
+<p>Uploads a <a href="#">document</a> as part of a multipart request. Returns a <a href="http://cw.sparshik.com:8006/#document-object">document object.</a><br>
+<br><br>
+We provide a <a href="#">sample document</a> to test this endpoint.
+<br><br>
+Valid file formats for documents are <code>jpg</code>, <code>png</code> and <code>pdf</code>.<br> The file size must be between 32KB and 10MB.<br></p>
+<h3 id='request-body-parameters'>REQUEST BODY PARAMETERS</h3>
+<table><thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>applicant_id</td>
+<td><strong>required</strong> <br> The ID of the applicant who owns the document</td>
+</tr>
+<tr>
+<td>file</td>
+<td><strong>required</strong> <br> The file to be uploaded</td>
+</tr>
+<tr>
+<td>type</td>
+<td><strong>required</strong><br> The <a href="http://cw.sparshik.com:8006/#document-types">type of document.</a> For example, <code>passport</code></td>
+</tr>
+<tr>
+<td>side</td>
+<td><strong>optional</strong><br> Either the <code>front</code> or <code>back</code> of the document</td>
+</tr>
+<tr>
+<td>issuing_country</td>
+<td><strong>optional</strong><br> The issuing country of the document in 3-letter ISO code</td>
+</tr>
+</tbody></table>
+<h2 id='retrieve-document'>Retrieve document</h2>
+<p><span class="get">GET</span><span class="url">https://api.onfido.com/v3/documents/{document_id}</span>
+<br><br>
+Retrieves a single document. Returns the corresponding <a href="http://cw.sparshik.com:8006/#document-object">document object.</a></p>
+<h2 id='list-documents'>List documents</h2>
+<p><span class="get">GET</span><span class="url">https://api.onfido.com/v3/documents?applicant_id={applicant_id}</span>
+<br>
+Lists all documents belonging to an applicant.<br><br>
+Returns data in the form:<br> <code>{&quot;documents&quot;: [&lt;LIST_OF_DOCUMENT_OBJECTS&gt;]}.</code><br><br></p>
+
+<p style="font-size:14px">QUERY STRING PARAMETERS</p>
+
+<p><code>applicant_id</code> (required): the ID of the applicant ID whose documents you want to list.</p>
+<h2 id='download-document'>Download document</h2>
+<p><span class="get">GET</span><span class="url">https://api.onfido.com/v3/documents?applicant_id={applicant_id}</span>
+<br>Downloads specific documents belong to an applicant.<br></p>
+
+<p>If successful, the response will be the binary data representing the image.</p>
+<h1 id='errors'>Errors</h1>
+<aside class="notice">
+This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
+</aside>
+
+<p>The Kittn API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone -- The kitten requested has been removed from our servers.</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I&#39;m a teapot.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="http">HTTP</a>
+                <a href="#" data-language-name="shell">cURL</a>
+                <a href="#" data-language-name="python">Python</a>
+                <a href="#" data-language-name="php">PHP</a>
+                <a href="#" data-language-name="java">Java</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
